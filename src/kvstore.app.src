@@ -1,0 +1,21 @@
+%%-*- mode: erlang -*-
+{application, kvstore,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+		  spooky
+                 ]},
+  {modules,	[kvstore,	     
+		 kvstore_app,
+		 kvstore_sup,
+		 kvstore_dict_sup,
+		 kvstore_web_sup,
+		 kvstore_spooky,
+		 kvstore_dict]},
+  {mod, { kvstore_app, []}},
+  {env, []}
+ ]}.
